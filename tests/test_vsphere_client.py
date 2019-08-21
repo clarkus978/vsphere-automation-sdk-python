@@ -89,11 +89,6 @@ def test_iso_client():
     assert isinstance(client.vcenter.iso, StubFactoryBase)
 
 
-def test_ovf_client():
-    assert hasattr(client.vcenter, 'ovf')
-    assert isinstance(client.vcenter.ovf, StubFactoryBase)
-
-
 def test_vm_template_client():
     assert hasattr(client.vcenter, 'vm_template')
     assert isinstance(client.vcenter.vm_template, StubFactoryBase)
